@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/styles.css'
 import '../css/normalize.css'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 const logo = require("../img/logo.svg").default;
 
 export const NavBar = () => {
@@ -10,8 +10,8 @@ export const NavBar = () => {
     <header className="site-header">
         <div className="contenedor contenido-header">
             <div className="barra">
-                <a href="index.html">
-                    <img src={logo} alt="Logotipo de Bienes Raices"></img></a>
+                <Link to="index.html">
+                    <img src={logo} alt="Logotipo de Bienes Raices"></img></Link>
 
                 <nav className="navegacion">
                     <NavLink to="/nosotros.html">Nosotros</NavLink>

@@ -11,6 +11,7 @@ import aCasaFAlberca2 from "../img/anuncio6.jpg"
 import iWC from "../img/icono_wc.svg"
 import iE from "../img/icono_estacionamiento.svg"
 import iD from "../img/icono_dormitorio.svg"
+import { Footer } from '../components/Footer'
 
 export const AnunciosApp = () => {
   return (
@@ -177,17 +178,7 @@ export const AnunciosApp = () => {
     </main>
 
 
-    <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <p class="copyrigth">Todos los derechos reservados 2022 &copy;</p>
-        </div>
-    </footer>
+    <Footer/>
 </body>
     </html>
     )

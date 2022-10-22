@@ -8,10 +8,10 @@ import aTLujo from "../img/anuncio2.jpg"
 import aCasaAlberca from "../img/anuncio3.jpg"
 import eBlog1 from "../img/blog1.jpg"
 import eBlog2 from "../img/blog2.jpg"
+import { Footer } from '../components/Footer'
+import { MasSobreNosotros } from '../components/MasSobreNosotros'
 
-const iSeguridad = require("../img/icono1.svg").default;
-const iMPrecio = require("../img/icono2.svg").default;
-const iATiempo = require("../img/icono3.svg").default;
+
 
 const iWC = require("../img/icono_wc.svg").default;
 const iEstacionamiento = require("../img/icono_estacionamiento.svg").default;
@@ -43,32 +43,7 @@ export const IndexApp = () => {
         </div>
     </header>
     
-        {/* <!--Contenedor--> */}
-    <section className="contenedor seccion">
-        <h2 className="fw-300 centrar-texto">Más sobre Nosotros</h2>
-
-        <div className="iconos-nosotros">
-            <div className="icono">
-                <img src={iSeguridad} alt="Icono Seguridad"></img>
-                <h3>Seguridad</h3>
-                <p>Corporis nihil possimus, iure officia labore commodi autem dolores numquam, quaerat vel eaque officiis magnam facilis enim? Ipsa consequuntur quidem sapiente distinctio!</p>
-            </div>
-
-            <div className="icono">
-                <img src={iMPrecio} alt="Icono Mejor Precio"></img>
-                <h3>El mejor Precio </h3>
-                <p>Corporis nihil possimus, iure officia labore commodi autem dolores numquam, quaerat vel eaque officiis magnam facilis enim? Ipsa consequuntur quidem sapiente distinctio!</p>
-            </div>
-
-            <div className="icono">
-                <img src={iATiempo} alt="Icono A Tiempo"></img>
-                <h3>A tiempo</h3>
-                <p>Corporis nihil possimus, iure officia labore commodi autem dolores numquam, quaerat vel eaque officiis magnam facilis enim? Ipsa consequuntur quidem sapiente distinctio!</p>
-            </div>
-        </div>  
-        {/* <!--Iconos Nosotros--> */}
-
-    </section>
+    <MasSobreNosotros/>
 
 
     <main className="contenedor">
@@ -201,19 +176,9 @@ export const IndexApp = () => {
         </section>
 
     </div>
-    {/* <!--Seccion-inferior contenedor--> */}
-
-    <footer className="site-footer seccion">
-        <div className="contenedor contenedor-footer">
-            <nav className="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-            <p className="copyrigth">Todos los derechos reservados 2022 &copy;</p>
-        </div>
-    </footer>
+    
+    <Footer/>
+        
     </body>
     </html>    
   )
