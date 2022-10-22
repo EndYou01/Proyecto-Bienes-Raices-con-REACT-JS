@@ -1,162 +1,172 @@
 import React from 'react'
 
+import '../css/styles.css'
+import '../css/normalize.css'
+
+import aCasaLago from '../img/anuncio1.jpg'
+import aTLujo from "../img/anuncio2.jpg"
+import aCasaAlberca from "../img/anuncio3.jpg"
+import eBlog1 from "../img/blog1.jpg"
+import eBlog2 from "../img/blog2.jpg"
+
+const iSeguridad = require("../img/icono1.svg").default;
+const iMPrecio = require("../img/icono2.svg").default;
+const iATiempo = require("../img/icono3.svg").default;
+
+const iWC = require("../img/icono_wc.svg").default;
+const iEstacionamiento = require("../img/icono_estacionamiento.svg").default;
+const iDormitorio = require("../img/icono_dormitorio.svg").default;
+
+
+
 export const IndexApp = () => {
   return (
-
-    <>
+    <html>
     <head>
-        <meta charset="UTF-8"></meta>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta charSet="UTF-8"></meta>
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <title>Index</title>
 
-        <link rel="stylesheet" href="../css/normalize.css"></link>
-        <link rel="stylesheet" href="../css/styles.css"></link>
+        <link rel="stylesheet" href="src\css\normalize.css"></link>
+        <link rel="stylesheet" href="src\css\styles.css"></link>
     </head>
     
     <body>
+        
     <header class="site-header inicio">
         <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="../img/logo.svg" alt="Logotipo de Bienes Raices"></img></a>
-
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="anuncios.html">Anuncios</a>
-                    <a href="blog.html">Blog</a>
-                    <a href="contacto.html">Contacto</a>
-                </nav>
+            <div className='barra'>
+                
             </div>
-
             <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
         </div>
-        {/* <!--Contenedor--> */}
     </header>
+    
+        {/* <!--Contenedor--> */}
+    <section className="contenedor seccion">
+        <h2 className="fw-300 centrar-texto">Más sobre Nosotros</h2>
 
-    <section class="contenedor seccion">
-        <h2 class="fw-300 centrar-texto">Más sobre Nosotros</h2>
-
-        <div class="iconos-nosotros">
-            <div class="icono">
-                <img src="../img/icono1.svg" alt="Icono Seguridad"></img>
+        <div className="iconos-nosotros">
+            <div className="icono">
+                <img src={iSeguridad} alt="Icono Seguridad"></img>
                 <h3>Seguridad</h3>
                 <p>Corporis nihil possimus, iure officia labore commodi autem dolores numquam, quaerat vel eaque officiis magnam facilis enim? Ipsa consequuntur quidem sapiente distinctio!</p>
             </div>
 
-            <div class="icono">
-                <img src="../img/icono2.svg" alt="Icono Mejor Precio"></img>
+            <div className="icono">
+                <img src={iMPrecio} alt="Icono Mejor Precio"></img>
                 <h3>El mejor Precio </h3>
                 <p>Corporis nihil possimus, iure officia labore commodi autem dolores numquam, quaerat vel eaque officiis magnam facilis enim? Ipsa consequuntur quidem sapiente distinctio!</p>
             </div>
 
-            <div class="icono">
-                <img src="../img/icono3.svg" alt="Icono A Tiempo"></img>
+            <div className="icono">
+                <img src={iATiempo} alt="Icono A Tiempo"></img>
                 <h3>A tiempo</h3>
                 <p>Corporis nihil possimus, iure officia labore commodi autem dolores numquam, quaerat vel eaque officiis magnam facilis enim? Ipsa consequuntur quidem sapiente distinctio!</p>
             </div>
-        </div>
+        </div>  
         {/* <!--Iconos Nosotros--> */}
 
     </section>
 
 
-    <main class="contenedor">
-        <h2 class="fw-300 centrar-texto">Casas y Depas en Venta</h2>
+    <main className="contenedor">
+        <h2 className="fw-300 centrar-texto">Casas y Depas en Venta</h2>
 
-        <div class="contenedor-anuncios">
-            <div class="anuncio">
-                <img src="../img/anuncio1.jpg" alt="Anuncio Casa en el Lago"></img>
-                <div class="contenido-anuncios">
+        <div className="contenedor-anuncios">
+            <div className="anuncio">
+                <img src={aCasaLago} alt="Anuncio Casa en el Lago"/>
+                <div className="contenido-anuncios">
                     <h3>Casa de lujo en el Lago</h3>
                     <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-                    <p class="precio">$3,000,000</p>
+                    <p className="precio">$3,000,000</p>
 
-                    <ul class="iconos-caracteristicas">
-                        <li><img src="../img/icono_wc.svg" alt="icono wc"></img>
+                    <ul className="iconos-caracteristicas">
+                        <li><img src={iWC} alt="icono wc"></img>
                             <p>3</p>
                         </li>
-                        <li><img src="../img/icono_estacionamiento.svg" alt="icono estacionamineto"></img>
+                        <li><img src={iEstacionamiento} alt="icono estacionamineto"></img>
                             <p>3</p>
                         </li>
-                        <li><img src="../img/icono_dormitorio.svg" alt="icono dormitorio"></img>
+                        <li><img src={iDormitorio} alt="icono dormitorio"></img>
                             <p>4</p>
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <a href="anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</a>
                 </div>
             </div>
 
-            <div class="anuncio">
-                <img src="../img/anuncio2.jpg" alt="Anuncio Terminados de Lujo"></img>
-                <div class="contenido-anuncios">
+            <div className="anuncio">
+                <img src={aTLujo} alt="Anuncio Terminados de Lujo"></img>
+                <div className="contenido-anuncios">
                     <h3>Casa Terminados de Lujo</h3>
                     <p>Casa con diseño moderno, así como tecnologia inteligente y amueblada </p>
-                    <p class="precio">$2,000,000</p>
+                    <p className="precio">$2,000,000</p>
 
-                    <ul class="iconos-caracteristicas">
-                        <li><img src="../img/icono_wc.svg" alt="icono wc"></img>
+                    <ul className="iconos-caracteristicas">
+                        <li><img src={iWC} alt="icono wc"></img>
                             <p>3</p>
                         </li>
-                        <li><img src="../img/icono_estacionamiento.svg" alt="icono estacionamineto"></img>
+                        <li><img src={iEstacionamiento} alt="icono estacionamineto"></img>
                             <p>3</p>
                         </li>
-                        <li><img src="../img/icono_dormitorio.svg" alt="icono dormitorio"></img>
+                        <li><img src={iDormitorio} alt="icono dormitorio"></img>
                             <p>4</p>
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <a href="anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</a>
                 </div>
             </div>
 
-            <div class="anuncio">
-                <img src="../img/anuncio3.jpg" alt="Anuncio Casa con Alberca"></img>
-                <div class="contenido-anuncios">
+            <div className="anuncio">
+                <img src={aCasaAlberca} alt="Anuncio Casa con Alberca"></img>
+                <div className="contenido-anuncios">
                     <h3>Casa con Alberca</h3>
                     <p>Casa con alberca y acabados de Lujo en la ciudad, excelente oportunidad</p>
-                    <p class="precio">$3,000,000</p>
+                    <p className="precio">$3,000,000</p>
 
-                    <ul class="iconos-caracteristicas">
-                        <li><img src="../img/icono_wc.svg" alt="icono wc"></img>
+                    <ul className="iconos-caracteristicas">
+                        <li><img src={iWC} alt="icono wc"></img>
                             <p>3</p>
                         </li>
-                        <li><img src="../img/icono_estacionamiento.svg" alt="icono estacionamineto"></img>
+                        <li><img src={iEstacionamiento} alt="icono estacionamineto"></img>
                             <p>3</p>
                         </li>
-                        <li><img src="../img/icono_dormitorio.svg" alt="icono dormitorio"></img>
+                        <li><img src={iDormitorio} alt="icono dormitorio"></img>
                             <p>4</p>
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <a href="anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</a>
                 </div>
             </div>
         </div>
 
-        <div class="ver-todas">
-            <a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
+        <div className="ver-todas">
+            <a href="anuncios.html" className="boton boton-verde">Ver Todas</a>
         </div>
     </main>
 
-    <section class="imagen-contacto">
-        <div class="contenedor contenido-contacto">
+    <section className="imagen-contacto">
+        <div className="contenedor contenido-contacto">
             <h2>Encuentra la casa de tus sueños</h2>
             <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-            <a href="contacto.html" class="boton boton-naranja">Contáctanos</a>
+            <a href="contacto.html" className="boton boton-naranja">Contáctanos</a>
         </div>
     </section>
 
-    <div class="seccion-inferior contenedor seccion">
-        <section class="blog">
-            <h3 class="centrar-texto fw-300">Nuestro Blog</h3>
+    <div className="seccion-inferior contenedor seccion">
+        <section className="blog">
+            <h3 className="centrar-texto fw-300">Nuestro Blog</h3>
 
-            <article class="entrada-blog">
-                <div class="imagen">
-                    <img src="../img/blog1.jpg" alt="Entrada de blog"></img>
+            <article className="entrada-blog">
+                <div className="imagen">
+                    <img src={eBlog1} alt="Entrada de blog"></img>
                 </div>
-                <div class="texto-entrada">
+                <div className="texto-entrada">
                     <a href="entrada.html">
                         <h4>Terraza en el techo de tu casa</h4>
                     </a>
@@ -165,11 +175,11 @@ export const IndexApp = () => {
                 </div>
             </article>
 
-            <article class="entrada-blog">
-                <div class="imagen">
-                    <img src="../img/blog2.jpg" alt="Entrada de blog"></img>
+            <article className="entrada-blog">
+                <div className="imagen">
+                    <img src={eBlog2} alt="Entrada de blog"></img>
                 </div>
-                <div class="texto-entrada">
+                <div className="texto-entrada">
                     <a href="entrada.html">
                         <h4>Guía para la decoración de tu hogar</h4>
                     </a>
@@ -179,9 +189,9 @@ export const IndexApp = () => {
             </article>
         </section>
 
-        <section class="testimoniales">
-            <h3 class="centrar-texto fw-300">Testimoniales</h3>
-            <div class="testimonial">
+        <section className="testimoniales">
+            <h3 className="centrar-texto fw-300">Testimoniales</h3>
+            <div className="testimonial">
 
                 <blockquote>
                     El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con todas mis expectativas.
@@ -193,18 +203,18 @@ export const IndexApp = () => {
     </div>
     {/* <!--Seccion-inferior contenedor--> */}
 
-    <footer class="site-footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
+    <footer className="site-footer seccion">
+        <div className="contenedor contenedor-footer">
+            <nav className="navegacion">
                 <a href="nosotros.html">Nosotros</a>
                 <a href="anuncios.html">Anuncios</a>
                 <a href="blog.html">Blog</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
-            <p class="copyrigth">Todos los derechos reservados 2022 &copy;</p>
+            <p className="copyrigth">Todos los derechos reservados 2022 &copy;</p>
         </div>
     </footer>
     </body>
-    </>    
+    </html>    
   )
 }
