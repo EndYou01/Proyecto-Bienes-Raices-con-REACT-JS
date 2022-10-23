@@ -10,6 +10,8 @@ import eBlog1 from "../img/blog1.jpg"
 import eBlog2 from "../img/blog2.jpg"
 import { Footer } from '../components/Footer'
 import { MasSobreNosotros } from '../components/MasSobreNosotros'
+import { Head } from '../components/Head'
+import { Link } from 'react-router-dom'
 
 
 
@@ -22,15 +24,8 @@ const iDormitorio = require("../img/icono_dormitorio.svg").default;
 export const IndexApp = () => {
   return (
     <html>
-    <head>
-        <meta charSet="UTF-8"></meta>
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <title>Index</title>
 
-        <link rel="stylesheet" href="src\css\normalize.css"></link>
-        <link rel="stylesheet" href="src\css\styles.css"></link>
-    </head>
+    <Head/>
     
     <body>
         
@@ -69,7 +64,7 @@ export const IndexApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
 
@@ -92,7 +87,7 @@ export const IndexApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
 
@@ -115,13 +110,13 @@ export const IndexApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" className="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
         </div>
 
         <div className="ver-todas">
-            <a href="anuncios.html" className="boton boton-verde">Ver Todas</a>
+            <Link to="/anuncios.html" className="boton boton-verde">Ver Todas</Link>
         </div>
     </main>
 
@@ -129,7 +124,7 @@ export const IndexApp = () => {
         <div className="contenedor contenido-contacto">
             <h2>Encuentra la casa de tus sueños</h2>
             <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-            <a href="contacto.html" className="boton boton-naranja">Contáctanos</a>
+            <Link to="/contacto.html" className="boton boton-naranja">Contáctanos</Link>
         </div>
     </section>
 
@@ -142,9 +137,9 @@ export const IndexApp = () => {
                     <img src={eBlog1} alt="Entrada de blog"></img>
                 </div>
                 <div className="texto-entrada">
-                    <a href="entrada.html">
+                    <Link to="/entrada.html">
                         <h4>Terraza en el techo de tu casa</h4>
-                    </a>
+                    </Link>
                     <p>Escrito el: <span> 20/10/2019 </span> por: <span> Admin </span> </p>
                     <p>Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero</p>
                 </div>
@@ -155,9 +150,9 @@ export const IndexApp = () => {
                     <img src={eBlog2} alt="Entrada de blog"></img>
                 </div>
                 <div className="texto-entrada">
-                    <a href="entrada.html">
+                    <Link to="/entrada.html">
                         <h4>Guía para la decoración de tu hogar</h4>
-                    </a>
+                    </Link>
                     <p>Escrito el: <span> 20/10/2019 </span> por: <span> Admin </span> </p>
                     <p>Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
                 </div>

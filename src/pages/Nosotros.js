@@ -6,21 +6,13 @@ import '../css/normalize.css'
 import nosotros from '../img/nosotros.jpg'
 import { Footer } from '../components/Footer';
 import { MasSobreNosotros } from '../components/MasSobreNosotros';
+import { Head } from '../components/Head';
 
 export const Nosotros = () => {
   return (
     <html>
         
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Nosotros</title>
-
-        <link rel="stylesheet" href="src\css\normalize.css"/>
-        <link rel="stylesheet" href="src\css\styles.css"/>
-
-    </head>
+    <Head/>
 
     <body>
 

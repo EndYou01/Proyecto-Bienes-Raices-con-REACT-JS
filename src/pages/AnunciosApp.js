@@ -12,20 +12,13 @@ import iWC from "../img/icono_wc.svg"
 import iE from "../img/icono_estacionamiento.svg"
 import iD from "../img/icono_dormitorio.svg"
 import { Footer } from '../components/Footer'
+import { Head } from '../components/Head'
+import { Link } from 'react-router-dom'
 
 export const AnunciosApp = () => {
   return (
     <html>
-        <head>
-            <meta charset="UTF-8"/>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-            <title>Anuncios</title>
-
-            <link rel="stylesheet" href="../css/normalize.css"/>
-            <link rel="stylesheet" href="../css/styles.css"/>
-
-        </head>
+        <Head/>
 
     <body>
 
@@ -54,7 +47,7 @@ export const AnunciosApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
 
@@ -77,7 +70,7 @@ export const AnunciosApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
 
@@ -100,7 +93,7 @@ export const AnunciosApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
 
@@ -123,7 +116,7 @@ export const AnunciosApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
 
@@ -146,7 +139,7 @@ export const AnunciosApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
 
@@ -169,7 +162,7 @@ export const AnunciosApp = () => {
                         </li>
                     </ul>
 
-                    <a href="anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</a>
+                    <Link to="/anuncio.html" class="boton boton-naranja d-block">Ver Propiedad</Link>
                 </div>
             </div>
         </div>
